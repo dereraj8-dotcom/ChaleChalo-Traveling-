@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - ChaloChale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane-departure me-2"></i>ChaloChale
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destination.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                </ul>
+
+                <a href="login.html" class="auth-btn login-btn ms-3">Login</a>
+                <a href="signup.html" class="auth-btn signup-btn ms-2">SignUp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore Amazing Destinations</h1>
+            <p>Discover breathtaking places around the world with ChaloChale</p>
+            <a href="packages.html" class="btn btn-primary-custom me-3">View Packages</a>
+            <a href="Booking.html" class="btn btn-secondary-custom">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://media.istockphoto.com/id/519330110/photo/taj-mahal-agra-india-monument-of-love-in-blue-sky.jpg?s=612x612&w=0&k=20&c=Uma6Q7KduznA6jUKcSquFP1iHHiw8UXcZEYVLONrmaQ="
+                            class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Mahal</h5>
+                            <p class="card-text">A beautiful symbol of love and one of the world's most famous monuments. Explore its stunning white marble architecture and rich history in Agra.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://t3.ftcdn.net/jpg/00/77/00/26/360_F_77002615_Gl1Hk6qZpi2xCAlX8EUTRLBqC4ei6QfC.jpg"
+                            class="card-img-top" alt="Goa">
+                        <div class="card-body">
+                            <h5 class="card-title">Goa</h5>
+                            <p class="card-text">Enjoy Goa's beautiful beaches, vibrant nightlife, and relaxing coastal atmosphere. Discover scenic views, delicious food, and exciting adventures.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://t3.ftcdn.net/jpg/05/02/48/70/360_F_502487005_nVDDbjXLEZ2YLNc6UQNqYt19T3MiSsp7.jpg"
+                            class="card-img-top" alt="Kashmir">
+                        <div class="card-body">
+                            <h5 class="card-title">Kashmir</h5>
+                            <p class="card-text">Explore Kashmir's breathtaking mountains, peaceful valleys, and beautiful lakes. Enjoy the scenic landscapes and experience the natural beauty of the "Paradise on Earth."</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ukLpTU0QhmmjktKnpJnPWKVuaeB_xdUo9Ip6hwJoqQBuxSmJnmOQSIQ&s=10"
+                            class="card-img-top" alt="Kerala">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerala</h5>
+                            <p class="card-text">Discover Kerala's beautiful backwaters, lush green landscapes, and peaceful beaches. Experience its rich culture, traditional cuisine, and relaxing natural beauty.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5q0_bBvH0f4_SbfRirpqNH0DFzp97lWXYOXGu99R7NA&s=10"
+                            class="card-img-top" alt="Jaipur">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaipur</h5>
+                            <p class="card-text">Explore Jaipur's magnificent forts, royal palaces, and colorful markets. Experience the rich culture and grand heritage of the "Pink City."</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://media.istockphoto.com/id/504985488/photo/bali-water-temple-pura-ulun-danu.jpg?s=612x612&w=0&k=20&c=Iot5kLt4uzW-FQfQHLj9BQ_gc6lvNm88_E8zqnvjQMU="
+                            class="card-img-top" alt="Bali Paradise">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali Paradise</h5>
+                            <p class="card-text">Experience Bali's beautiful beaches, peaceful temples, and lush tropical landscapes. Enjoy a relaxing getaway filled with culture, adventure, and natural beauty.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://wallpapercave.com/wp/wp13734284.jpg"
+                            class="card-img-top" alt="Nepal">
+                        <div class="card-body">
+                            <h5 class="card-title">Nepal</h5>
+                            <p class="card-text">Explore Nepal's majestic mountains, peaceful temples, and beautiful valleys. Experience its rich culture, breathtaking landscapes, and exciting adventures.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO341AFishefPKQn3mCkv4eCAd8NiQv5hICsXhUICgRAkPdThloMIwOaih&s=10"
+                            class="card-img-top" alt="Manali">
+                        <div class="card-body">
+                            <h5 class="card-title">Manali</h5>
+                            <p class="card-text">Explore Manali's snow-capped mountains, scenic valleys, and beautiful rivers. Enjoy adventure activities, peaceful nature, and breathtaking Himalayan views.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://media.istockphoto.com/id/1297500238/photo/spituk-gompa-indus-valley-near-leh-ladakh-india.jpg?s=612x612&w=0&k=20&c=IhawDKQhl-WIrYxJprcUGLg3YS84s7VMMOFzt443vzs="
+                            class="card-img-top" alt="Leh-Ladakh">
+                        <div class="card-body">
+                            <h5 class="card-title">Leh-Ladakh</h5>
+                            <p class="card-text">Explore Leh-Ladakh's stunning mountains, high-altitude lakes, and rugged landscapes. Enjoy breathtaking views, peaceful monasteries, and exciting Himalayan adventures.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://t4.ftcdn.net/jpg/02/48/51/93/360_F_248519351_gi01kb7m3MDrxyuIWdpq84YFK7woCQJj.jpg"
+                            class="card-img-top" alt="Mysore">
+                        <div class="card-body">
+                            <h5 class="card-title">Mysore</h5>
+                            <p class="card-text">Explore the magnificent Mysore Palace, known for its grand architecture and royal heritage. Enjoy its beautiful interiors, vibrant decorations, and rich history.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://images.pexels.com/photos/8112519/pexels-photo-8112519.jpeg?cs=srgb&dl=pexels-rachel-claire-8112519.jpg&fm=jpg"
+                            class="card-img-top" alt="Varanasi">
+                        <div class="card-body">
+                            <h5 class="card-title">Varanasi</h5>
+                            <p class="card-text">Experience Varanasi's ancient temples, sacred Ganges ghats, and vibrant spiritual atmosphere. Discover its rich culture, traditions, and timeless history.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card destination-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKvxWLTDn_NFdUbUp-Tlj7b-ZwDL1ohuGN0XeuhmRHeZgU-YHKnraE9zck&s=10"
+                            class="card-img-top" alt="Amritsar">
+                        <div class="card-body">
+                            <h5 class="card-title">Amritsar</h5>
+                            <p class="card-text">Visit the Golden Temple, a beautiful symbol of peace and spirituality. Explore Amritsar's rich history, culture, and delicious Punjabi cuisine.</p>
+                            <a href="Booking.html" class="btn btn-explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>About ChaloChale</h5>
+                    <p class="mb-4" style="opacity: 0.9;">Your trusted travel companion for unforgettable journeys across India and beyond. We make travel dreams come true with expert planning, exceptional service, and unforgettable experiences.</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <div class="stats mt-4">
+                        <div class="row">
+                            <div class="col-4 stat-item">
+                                <h3>50K+</h3>
+                                <p>Happy Travelers</p>
+                            </div>
+                            <div class="col-4 stat-item">
+                                <h3>200+</h3>
+                                <p>Destinations</p>
+                            </div>
+                            <div class="col-4 stat-item">
+                                <h3>15+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Home</a></li>
+                        <li><a href="About.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>About Us</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Destinations</a></li>
+                        <li><a href="packages.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Tour Packages</a></li>
+                        <li><a href="Booking.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Booking</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Taj Mahal</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Goa Beaches</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Kashmir</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Kerala Backwaters</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Rajasthan Heritage</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Bali Paradise</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Contact Information</h5>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Head Office:</strong><br>
+                            <span style="opacity: 0.9;">123 Travel Street, Andheri East, Mumbai - 400069</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <span style="opacity: 0.9;">+91 98765 43210</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <span style="opacity: 0.9;">info@chalochale.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Business Hours:</strong><br>
+                            <span style="opacity: 0.9;">Mon - Sat: 9:00 AM - 7:00 PM</span>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4 mb-3">Newsletter</h5>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">Subscribe to get travel tips and exclusive offers!</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button type="submit" class="btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2026 ChaloChale. All rights reserved. | Designed with <i class="fas fa-heart text-danger"></i> for travelers</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#" class="me-3">Terms of Service</a>
+                        <a href="#">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

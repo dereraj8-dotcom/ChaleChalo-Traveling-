@@ -4,377 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChaloChale</title>
+    <title>ChaloChale - Your Travel Partner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .navbar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-            margin: 0px;
-            padding: 15px 0;
-            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-        }
-
-        .navbar-brand {
-            color: white;
-            font-weight: bold;
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-        }
-
-        .navbar-nav {
-            margin-left: auto;
-            gap: 15px;
-        }
-
-        .nav-link {
-            color: rgba(255,255,255,0.9);
-            font-size: 15px;
-            font-weight: 500;
-            padding: 8px 15px !important;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-link:hover,
-        .nav-link.active {
-            color: white;
-            background-color: rgba(255,255,255,0.2);
-        }
-
-        .login-btn {
-            margin-left: 20px;
-            background-color: #ffc107;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            color: #212529;
-        }
-
-        .login-btn:hover {
-            background-color: #ffca2c;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
-        }
-
-
-
-         .signup-btn {
-            margin-left: 20px;
-            background-color: #ffc107;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            color: #212529;
-        }
-
-        .signup-btn:hover {
-            background-color: #ffca2c;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
-        }
-
-        .carousel-item img {
-            height: 550px;
-            object-fit: cover;
-        }
-
-        .carousel-caption {
-            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 50px;
-        }
-
-        .carousel-caption h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .carousel-caption p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .carousel-caption .btn {
-            padding: 12px 30px;
-            font-size: 1.1rem;
-            border-radius: 25px;
-            font-weight: 600;
-            color: #212529;
-        }
-
-        .carousel-caption .btn:hover {
-            background-color: #ffc107;
-            color: #212529;
-        }
-
-        .card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .card-title {
-            font-weight: 700;
-            color: #212529;
-            margin-bottom: 10px;
-        }
-
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px;
-            font-size: 2rem;
-        }
-
-        .package-card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-        }
-
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
-        }
-
-        .package-card .card-body {
-            padding: 25px;
-        }
-
-        .package-card h5 {
-            color: white;
-            font-size: 1.3rem;
-        }
-
-        .package-card p {
-            color: rgba(255,255,255,0.9);
-        }
-
-        .package-card h4 {
-            color: #fff !important;
-        }
-
-        .package-card .btn {
-            background-color: white;
-            border-color: white;
-            color: #f5576c;
-            font-weight: 600;
-            border-radius: 25px;
-            padding: 12px 20px;
-        }
-
-        .package-card .btn:hover {
-            background-color: #ffc107;
-            border-color: #ffc107;
-            color: #212529;
-        }
-
-        .package-card .gradient-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-        }
-
-        .package-card .gradient-btn:hover {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            color: white;
-        }
-
-        section {
-            position: relative;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(to right, #ffc107, #f5576c);
-            border-radius: 2px;
-        }
-
-        .gradient-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .gradient-btn:hover {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        footer {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0 30px;
-        }
-
-        footer h5 {
-            color: #ffc107;
-            font-weight: 700;
-            margin-bottom: 25px;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        footer a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: block;
-            padding: 5px 0;
-        }
-
-        footer a:hover {
-            color: #ffc107;
-            padding-left: 5px;
-        }
-
-        footer .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.1);
-            margin-right: 12px;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        footer .social-icons a:hover {
-            background-color: #ffc107;
-            color: #212529;
-            transform: translateY(-3px);
-        }
-
-        footer .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.2);
-            margin-top: 50px;
-            padding-top: 30px;
-        }
-
-        footer .newsletter-form {
-            margin-top: 20px;
-        }
-
-        footer .newsletter-form input {
-            border-radius: 25px 0 0 25px;
-            border: none;
-            padding: 12px 20px;
-        }
-
-        footer .newsletter-form button {
-            border-radius: 0 25px 25px 0;
-            background-color: #ffc107;
-            border: none;
-            color: #212529;
-            font-weight: 600;
-            padding: 12px 25px;
-        }
-
-        footer .newsletter-form button:hover {
-            background-color: #ffca2c;
-        }
-
-        footer .contact-item {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        footer .contact-item i {
-            color: #ffc107;
-            margin-right: 12px;
-            margin-top: 5px;
-        }
-
-        footer .stats {
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-        }
-
-        footer .stat-item {
-            text-align: center;
-        }
-
-        footer .stat-item h3 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffc107;
-            margin-bottom: 5px;
-        }
-
-        footer .stat-item p {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <i class="fas fa-plane-departure me-2"></i>ChaloChale
             </a>
 
@@ -384,272 +25,249 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                 <ul class="navbar-nav ms-auto align-items-center">
-
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinations</a>
+                        <a class="nav-link" href="destination.html">Destinations</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Packages</a>
+                        <a class="nav-link" href="packages.html">Packages</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Booking</a>
+                        <a class="nav-link" href="Booking.html">Booking</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
                 </ul>
 
-                <button class="login-btn">Login</button>
-                
-                <a href="signup.html" class="signup-btn">SignUp</a>
-
+                <a href="login.html" class="auth-btn login-btn ms-3">Login</a>
+                <a href="signup.html" class="auth-btn signup-btn ms-2">SignUp</a>
             </div>
         </div>
     </nav>
 
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore the World With ChaloChale</h1>
+            <p>Discover beautiful destinations, exciting experiences and unforgettable journeys.</p>
+            <a href="destination.html" class="btn btn-primary-custom me-3">Explore Destinations</a>
+            <a href="packages.html" class="btn btn-secondary-custom">View Packages</a>
         </div>
+    </section>
 
 
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-
-                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-                    class="d-block w-100" alt="Taj Mahal">
-
-                <div class="carousel-caption">
-                    <h2 class="fw-bold">Explore Iconic India</h2>
-                    <p>Discover the timeless beauty of the Taj Mahal and India's rich heritage.</p>
-                    <button class="btn btn-light btn-lg">Book Your Trip</button>
-                </div>
-
-            </div>
-
-
-            <div class="carousel-item">
-
-                <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100"
-                    alt="Beach Paradise">
-
-                <div class="carousel-caption">
-                    <h2 class="fw-bold">Beach Paradise Awaits</h2>
-                    <p>Relax on pristine beaches with crystal clear waters and golden sands.</p>
-                    <button class="btn btn-light btn-lg">Book Your Trip</button>
-                </div>
-
-
-            </div>
-
-
-            <div class="carousel-item">
-
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-                    class="d-block w-100" alt="Mountain Adventure">
-
-                <div class="carousel-caption">
-                    <h2 class="fw-bold">Mountain Adventures</h2>
-                    <p>Embark on thrilling journeys through majestic mountain ranges.</p>
-                    <button class="btn btn-light btn-lg">Book Your Trip</button>
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-            <span class="visually-hidden">Previous</span>
-
-        </button>
-
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-            <span class="visually-hidden">Next</span>
-
-        </button>
-
-    </div>
-
-
-    <section class="py-5 bg-light">
+    <!-- Why Choose Us Section -->
+    <section class="py-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5 section-title">Why Choose ChaloChale?</h2>
-
+            <h2 class="section-title">Why Choose ChaloChale?</h2>
             <div class="row text-center">
-
                 <div class="col-md-4 mb-4">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <div class="feature-icon">
                         <i class="fas fa-plane fa-2x"></i>
                     </div>
                     <h5 class="fw-bold">Easy Booking</h5>
                     <p class="text-muted">Book travel packages quickly with our simple booking system.</p>
                 </div>
-
                 <div class="col-md-4 mb-4">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <div class="feature-icon">
                         <i class="fas fa-hotel fa-2x"></i>
                     </div>
                     <h5 class="fw-bold">Best Hotels</h5>
                     <p class="text-muted">We provide comfortable hotel stays at affordable prices.</p>
                 </div>
-
                 <div class="col-md-4 mb-4">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                    <div class="feature-icon">
                         <i class="fas fa-headset fa-2x"></i>
                     </div>
                     <h5 class="fw-bold">24/7 Support</h5>
                     <p class="text-muted">Our travel support team is available anytime for assistance.</p>
                 </div>
-
             </div>
-
         </div>
     </section>
 
 
 
-    <section class="py-5">
+    <!-- Popular Destinations Section -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5 section-title">Popular Destinations</h2>
+            <h2 class="section-title">Popular Destinations</h2>
             <div class="row">
-
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100">
+                    <div class="card destination-card h-100">
                         <img src="https://static.toiimg.com/thumb/msid-68990012,width-748,height-499,resizemode=4,imgsize-243645/.jpg"
                             class="card-img-top" alt="Taj Mahal">
                         <div class="card-body">
                             <h5 class="card-title">Taj Mahal</h5>
-                            <p class="card-text text-muted">Experience the timeless beauty of this UNESCO World Heritage site.</p>
-                            <a href="#" class="btn w-100 gradient-btn">Explore</a>
+                            <p class="card-text">Experience the timeless beauty of this UNESCO World Heritage site.</p>
+                            <a href="destination.html" class="btn btn-explore">Explore</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100">
+                    <div class="card destination-card h-100">
                         <img src="https://www.indianholiday.com/wordpress/wp-content/uploads/2025/06/Most-Beautiful-Places-in-the-World.jpg"
                             class="card-img-top" alt="Swiss Alps">
                         <div class="card-body">
                             <h5 class="card-title">Swiss Alps</h5>
-                            <p class="card-text text-muted">Discover breathtaking mountain views and pristine landscapes.</p>
-                            <a href="#" class="btn w-100 gradient-btn">Explore</a>
+                            <p class="card-text">Discover breathtaking mountain views and pristine landscapes.</p>
+                            <a href="destination.html" class="btn btn-explore">Explore</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100">
+                    <div class="card destination-card h-100">
                         <img src="https://assets.cntraveller.in/photos/677e3cbc6d5ab302e5ecaa86/master/w_1024%2Cc_limit/Peyto%2520Lake%2520in%2520Canada-GettyImages-1430274132.jpeg"
                             class="card-img-top" alt="Peyto Lake">
                         <div class="card-body">
                             <h5 class="card-title">Peyto Lake</h5>
-                            <p class="card-text text-muted">Witness the stunning turquoise waters of Canada's natural wonder.</p>
-                            <a href="#" class="btn w-100 gradient-btn">Explore</a>
+                            <p class="card-text">Witness the stunning turquoise waters of Canada's natural wonder.</p>
+                            <a href="destination.html" class="btn btn-explore">Explore</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100">
+                    <div class="card destination-card h-100">
                         <img src="https://hblimg.mmtcdn.com/content/hubble/img/bali/mmt/destination/m_bali_l_393_629.jpg" class="card-img-top" alt="Bali">
                         <div class="card-body">
                             <h5 class="card-title">Bali Paradise</h5>
-                            <p class="card-text text-muted">Escape to tropical beaches and ancient temples in Indonesia.</p>
-                            <a href="#" class="btn w-100 gradient-btn">Explore</a>
+                            <p class="card-text">Escape to tropical beaches and ancient temples in Indonesia.</p>
+                            <a href="destination.html" class="btn btn-explore">Explore</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
 
+    <!-- Featured Packages Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Featured Packages</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card package-card">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Goa">
+                        <div class="card-body">
+                            <h5 class="card-title">Goa Beach Package</h5>
+                            <p class="package-duration">Duration: 5 Days / 4 Nights</p>
+                            <p class="package-price">₹15,999</p>
+                            <p class="card-text">Enjoy pristine beaches, vibrant nightlife, and delicious seafood in Goa.</p>
+                            <a href="Booking.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card package-card">
+                        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Jaipur">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaipur Heritage Package</h5>
+                            <p class="package-duration">Duration: 5 Days / 4 Nights</p>
+                            <p class="package-price">₹15,999</p>
+                            <p class="card-text">Explore magnificent forts, royal palaces, and colorful markets of the Pink City.</p>
+                            <a href="Booking.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card package-card">
+                        <img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kashmir">
+                        <div class="card-body">
+                            <h5 class="card-title">Kashmir Paradise Package</h5>
+                            <p class="package-duration">Duration: 5 Days / 4 Nights</p>
+                            <p class="package-price">₹25,999</p>
+                            <p class="card-text">Experience breathtaking mountains, peaceful valleys, and beautiful lakes.</p>
+                            <a href="Booking.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>Happy Travelers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Destinations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Travel Packages</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5 section-title">Featured Packages</h2>
-            
+            <h2 class="section-title">What Our Travelers Say</h2>
             <div class="row">
-
                 <div class="col-md-4 mb-4">
-                    <div class="card package-card">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Goa Beach Package</h5>
-                            <p>Duration: 5 Days / 4 Nights</p>
-                            <h4 class="fw-bold">₹15,999</h4>
-                            <button class="btn w-100 mt-2" data-bs-toggle="modal" data-bs-target="#bookingModak">
-                                Book Now
-                            </button>
-                        </div>
-
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" class="testimonial-avatar" alt="Traveler">
+                        <p class="testimonial-text">"Amazing experience! The Goa package was perfectly planned. Everything from hotels to sightseeing was well organized."</p>
+                        <p class="testimonial-author">- Priya Sharma</p>
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-4">
-                    <div class="card package-card">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Jaipur Package</h5>
-                            <p>Duration: 5 Days / 4 Nights</p>
-                            <h4 class="fw-bold">₹15,999</h4>
-                            <button class="btn w-100 mt-2" data-bs-toggle="modal" data-bs-target="#bookingModak">
-                                Book Now
-                            </button>
-                        </div>
-
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" class="testimonial-avatar" alt="Traveler">
+                        <p class="testimonial-text">"ChaloChale made our Kashmir trip unforgettable. The team was supportive throughout and the package was great value."</p>
+                        <p class="testimonial-author">- Rahul Mehta</p>
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-4">
-                    <div class="card package-card">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Kashmir Package</h5>
-                            <p>Duration: 5 Days / 4 Nights</p>
-                            <h4 class="fw-bold">₹25,999</h4>
-                            <button class="btn w-100 mt-2" data-bs-toggle="modal" data-bs-target="#bookingModak">
-                                Book Now
-                            </button>
-                        </div>
-
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" class="testimonial-avatar" alt="Traveler">
+                        <p class="testimonial-text">"Excellent service and professional team. The Jaipur heritage tour was educational and fun. Highly recommended!"</p>
+                        <p class="testimonial-author">- Anjali Patel</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Book your dream vacation today and create memories that last a lifetime.</p>
+            <a href="Booking.html" class="btn btn-secondary-custom btn-lg">Book Your Trip Now</a>
+        </div>
+    </section>
 
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -663,7 +281,7 @@
                         <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
-                    
+
                     <div class="stats mt-4">
                         <div class="row">
                             <div class="col-4 stat-item">
@@ -685,26 +303,24 @@
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Home</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>About Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Destinations</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Tour Packages</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Booking</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Contact Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Blog</a></li>
+                        <li><a href="index.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Home</a></li>
+                        <li><a href="About.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>About Us</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Destinations</a></li>
+                        <li><a href="packages.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Tour Packages</a></li>
+                        <li><a href="Booking.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Booking</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5>Destinations</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Taj Mahal</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Swiss Alps</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Peyto Lake</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Bali Paradise</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Goa Beaches</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Kerala Backwaters</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Rajasthan Heritage</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Taj Mahal</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Goa Beaches</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Kashmir</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Kerala Backwaters</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Rajasthan Heritage</a></li>
+                        <li><a href="destination.html"><i class="fas fa-chevron-right me-2" style="font-size: 0.7rem;"></i>Bali Paradise</a></li>
                     </ul>
                 </div>
 
@@ -753,7 +369,7 @@
             <div class="footer-bottom">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">&copy; 2024 ChaloChale. All rights reserved. | Designed with <i class="fas fa-heart text-danger"></i> for travelers</p>
+                        <p class="mb-0">&copy; 2026 ChaloChale. All rights reserved. | Designed with <i class="fas fa-heart text-danger"></i> for travelers</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
                         <a href="#" class="me-3">Privacy Policy</a>
@@ -769,7 +385,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
 </body>
-
 </html>
